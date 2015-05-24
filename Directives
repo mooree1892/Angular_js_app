@@ -13,3 +13,5 @@ ng-repeat - repeat a section of each item in an Array
 	<li ng-repeat="product in store.products"> {{product.name}} </li>
 
 
+-better to do initialization in a controller
+
