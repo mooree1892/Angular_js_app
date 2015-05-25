@@ -30,6 +30,7 @@
     this.review = {};
 
     this.addReview = function(product){
+      this.review.createdOn = Date.now();
       product.reviews.push(this.review);
       this.review = {};
     };
@@ -70,7 +71,7 @@
       images: [
         "images/gem-01.gif",
         "images/gem-03.gif",
-        "images/gem-04.gif"
+        "images/gem-04.gif",
       ],
       reviews: [{
         stars: 3,
